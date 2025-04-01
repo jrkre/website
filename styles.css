@@ -1,0 +1,112 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-color: #4f4f4f;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    /* margin: 20px; */
+    /* display: inline-block; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    /* padding: 10px; */
+}
+
+header h1 {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-shadow: 2ox 2px 4px #000000;
+}
+
+
+nav {
+    padding: 20px;
+    width: 100%;
+    color: #010101;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #333;
+} 
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list .nav-right {
+    margin-left: auto;
+}
+
+.blog {
+    text-align: right;
+}
+
+/* Style for the experience section list to be vertical */
+#experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #333;
+}
+
+.section p {
+    margin: 20px;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin: 5px;
+    margin-left: 40px;
+}
+
+.giphy-embed {
+    margin: 20px;
+}
+
+.gif {
+    margin: 20px;
+}
+
+.resume-header {
+    text-align: left;
+    padding: 10px;
+    /* border: 2px solid #333; */
+    width: auto;
+}
+
+.resume-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #696969;
+    color: #e0e0e0;
+}
+
+.resume-section h2 {
+    margin: 20px;
+}

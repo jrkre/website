@@ -22,7 +22,24 @@
     <main>
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>[photo carosel here]</p>
+            <div class="carousel">
+                <!-- Radio buttons to control slides -->
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                        
+                <div class="slides">
+                    <div class="slide"><img src="images/slide1.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="images/slide2.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="images/slide3.jpg" alt="Slide 3"></div>
+                </div>
+            
+                <div class="nav">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
             <p>Hello, I'm Joshua Knight! I am a computer science student with a passion for robotics. I'm not studying or working on my research, I enjoy photography, hiking, reading, and coffee.</p>
             
         </section>

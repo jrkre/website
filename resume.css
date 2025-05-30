@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4f4f4f;
+  color: #696969;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+  background-color: #e0e0e0;
+  color: #4f4f4f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.nav-list li {
+  margin: 0;
+  display: inline;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: #4f4f4f;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;
+  color: #4f4f4f;
+}
+
+h2 {
+  color: #696969;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  font-weight: bold;
+}
+
+.date {
+  font-style: italic;
+  color: #696969;
+}

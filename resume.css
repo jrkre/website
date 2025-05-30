@@ -47,6 +47,11 @@ nav {
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
+.nav-list a:hover,
+.nav-list a.active {
+  color: #696969;
+  border-bottom: 2px solid #696969;
+}
 
 .container {
   display: flex;

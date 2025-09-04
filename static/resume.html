@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Resume</title>
+  <link rel="stylesheet" href="resume.css" />
 </head>
 <body>
-    <header>
-        <h1>Joshua Knight</h1>
+    
+  <header>
+    <h1>Joshua Knight</h1>
+    <p>Computer Science & Robotics Enthusiast</p>
         <nav>
             <ul class="nav-list">
                 <li><a href="static/index.html">Home</a></li>
@@ -19,46 +21,72 @@
                 <li class="nav-right"><a href="static/blog.html">Blog</a></li>
             </ul>
         </nav>
-    </header>
+  </header>
 
-    <section class="resume-section">
-        <div class="resume-header">
-            <h2>Resume</h2>
-            <hr>
-            <p></p>
-        </div>
-        <section id="experience" class="section">
-            <h2>Experience</h2>
+  <div class="container">
+    <div class="card">
+      <h2>Education</h2>
+      <p><strong>University of Nevada, Reno</strong><br>
+        <ul> 
+            <li>B.S. Computer Science and Engineering, Minor in Mathematics and Robotics</li>
+            <li>M.S. Robotics, Focus in Socially Assistive Robotics</li> 
+        </ul>
+      </p>
+    </div>
 
-            <hr>
-            
-            <p>Undergraduate Robotics Researcher</p>
-            <ul>
-                <li>University Of Nevada, Reno</li>
-                <li>June 2023 - Present</li>
-                <li>Conducting research on socially assistive robots, education and expressive affect.</li>
-                <li>[photo of pr2, photo of quori, photo of lil guy w/link to repo]</li>
-            </ul>
+    <div class="card">
+      <h2>Experience</h2>
+      <p class="role">Undergraduate Researcher - UNR <span class="date">(Aug 2023 - Present)</span></p>
+      <ul>
+        <li>Worked with AI Institute for Exceptional Education and personalized learning.</li>
+        <li>Designed studies/software for customizable robot faces for children.</li>
+        <li>Built a web app for educational robotics simulations with AI tools.</li>
+        <li>Implemented low-cost embedded drivers for student robotics systems.</li>
+      </ul>
 
-            <p></p>
-        </section>
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <hr>
-                <p>University of Nevada, Reno</p>
-                <ul>
-                    <li>Bachelor of Science in Computer Science and Engineering</li>
-                    <li>Expected Graduation: June 2026</li>
-                </ul>
-        </section>
-    </section>
-    <!-- page goey herey -->
+      <p class="role">REU Researcher - UNR <span class="date">(Jun 2023 - Aug 2023)</span></p>
+      <ul>
+        <li>Explored architectural solutions for human-robot collaboration.</li>
+        <li>Built an interruption-aware PR2 robot task system.</li>
+      </ul>
 
+      <p class="role">K-12 Robotics Education Assistant - Nevada Robotics @ DRI <span class="date">(Nov 2021 - Aug 2024)</span></p>
+      <ul>
+        <li>Managed statewide robotics lending library.</li>
+        <li>Modernized inventory systems, trained teachers in NV.</li>
+      </ul>
+    </div>
 
+    <div class="card">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>Design Activity for Personalized Robot Faces</strong> - IEEE/ACM HRI 2025 (Submitted)</li>
+        <li><strong>Architectural Solution for Tightly-Coupled Robot Collaborative Tasks</strong> - IROS 2024 (Submitted)</li>
+      </ul>
+    </div>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 Joshua Knight</p>
-    </footer>
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>HomeLab</strong> - Personal VM streaming for development/gaming/system admin.</li>
+        <li><strong>Robot Restoration</strong> - Maintenance of PR2, Quori, Misty II at UNR Robotics Center.</li>
+    </ul>
+    </div>
+
+    <div class="card">
+      <h2>Leadership</h2>
+      <ul>
+        <li><strong>UNR Robotics Club President</strong> <span class="date">(Dec 2022 - May 2024)</span><br> Secured $10k in grants, supported K-12 outreach.</li>
+        <li><strong>FBLA NV State Champion - Mobile App Dev</strong> <span class="date">(May 2018)</span><br> Built a social selling app and backend with moderation tools.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <p>MacOS, Linux, Windows | ROS/ROS2, C/C++, Python, .NET Core, NodeJS, Haskell, Bash, Git<br>
+      AutoCAD, Blender | Research, Web Dev, Azure Deployments, SysAdmin<br>
+      Project Mgmt, Collaboration, Technical Writing, Presentations</p>
+    </div>
+  </div>
 </body>
 </html>

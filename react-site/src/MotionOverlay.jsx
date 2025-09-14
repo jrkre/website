@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import './static/App.css';
-import logo from './temp_logo.png';
+import logo from './static/jk_logo_mask.svg';
 
 const LOGO_WIDTH = 450; // adjust to your overlay logo's width
 const LOGO_HEIGHT = 100; // adjust to your overlay logo's height
@@ -12,7 +12,7 @@ const MotionOverlay = ({ targetPos, motion_delay }) => {
   const centerY = window.innerHeight / 2 - LOGO_HEIGHT / 2;
 
   return (
-    <div className="motion-overlay">
+    <div className="motion-overlay crt-text crt-image">
       <motion.div
         className="logo-overlay"
         initial={{

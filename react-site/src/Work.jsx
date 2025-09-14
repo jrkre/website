@@ -1,39 +1,22 @@
 import './output.css';
 import './static/App.css';
-import { AnimatePresence, motion } from "framer-motion";
-import React , { useRef, useState, useEffect } from 'react';
-import logo from './temp_logo.png';
+import resume from './static/jay_knight_resume.pdf';
 
 
-export function Work() {
-
-  const [headerVisible, setHeaderVisible] = useState(false);
-  const logoRef = useRef(null);
-  const [targetPos, setTargetPos] = useState();
-  const overlayRef = useRef(null);
-  const headerLogoRef = useRef(null);
-
-
-  useEffect(() => {
-    if (headerLogoRef.current) {
-      const rect = headerLogoRef.current.getBoundingClientRect();
-      setTargetPos({
-        x: rect.left,
-        y: rect.top,
-      });
-    }
-  }, []);
+function Work() {
 
   return (
-     <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+     <div className="bg-gray-950 py-10 min-h-screen">
       {/* Resume Container */}
-      <div className=" bg-gray-800 p-8 rounded-2xl shadow-lg">
+      <div className=" bg-gray-950 p-8 rounded-2xl shadow-lg w-full mx-auto crt-text">
 
         {/* Header Card */}
         <section className="resume-header">
-          <div className="flex items-center justify-between mb-4">
+          <div className="items-center justify-between mb-4">
             <h1>jay knight</h1>
             <p>computer science & robotics student</p>
+            <a href="https://github.com/jrkre">github.com/jrkre</a> <br />
+            <a href={resume} download>download resume</a>
           </div>
         </section>
 
@@ -52,13 +35,13 @@ export function Work() {
           <h2>Skills</h2>
           <div>
             <div>
-              <span className="font-semibold skills">Languages/Frameworks:</span> MacOS, Linux, Windows | ROS/ROS2, C/C++, Python, .NET Core, NodeJS, Haskell, Bash
+              <span className="font-semibold skills text-gray-400">Languages/Frameworks:</span> MacOS, Linux, Windows | ROS/ROS2, C/C++, Python, .NET Core, NodeJS, Haskell, Bash
             </div>
             <div>
-              <span className="font-semibold skills">Tools:</span> AutoCAD, Blender | Research, Web Dev, Azure Deployments, SysAdmin, Git
+              <span className="font-semibold skills text-gray-400">Tools:</span> AutoCAD, Blender | Research, Web Dev, Azure Deployments, SysAdmin, Git
             </div>
             <div>
-              <span className="font-semibold skills">Other:</span> Project Mgmt, Collaboration, Technical Writing, Presentations
+              <span className="font-semibold skills text-gray-400">Other:</span> Embedded Systems Design, Project Management, Technical Writing, Presentations
             </div>
           </div>
         </section>
@@ -66,14 +49,14 @@ export function Work() {
         {/* Experience */}
         <section className="resume-section">
           <h2>Experience</h2>
-          <h3>Undergraduate Researcher - UNR <span className="text-gray-400 text-sm">(Aug 2023 - Present)</span></h3>
+          <h3>Undergraduate Researcher - UNR SARG <span className="text-gray-400 text-sm">(Aug 2023 - Present)</span></h3>
           <ul>
             <li><p>Made significant contributions to the AI Institute for Exceptional Education and personalized learning.</p></li>
             <li><p>Designed study and software solution for customizable robot faces for children.</p></li>
             <li><p>Implemented a student-learning platform for educational robotics simulations. The platform integrates AI tools to study adaptive learning.</p></li>
             <li><p>Implemented low-level drivers for low-cost educational robotics platforms.</p></li>
           </ul>
-          <h3>REU Researcher - UNR <span className="text-gray-400 text-sm">(Jun 2023 - Aug 2023)</span></h3>
+          <h3>REU Researcher - UNR SARG <span className="text-gray-400 text-sm">(Jun 2023 - Aug 2023)</span></h3>
           <ul>
             <li><p>Researched architectural solutions for human-robot collaboration.</p></li>
             <li><p>Built an interruption-aware dynamic task tree. Tested on PR2 robot.</p></li>
@@ -108,14 +91,13 @@ export function Work() {
           <h2>Projects</h2>
           <ul>
             <li>
-              <span className="font-semibold">HomeLab</span> 
-              <p>- Personal VM streaming for development/gaming/systems administration.</p>
-              <p>- Containers for video streaming, website hosting, load balancing and more.</p>
+              <span className="font-semibold">'HomeLab'</span> 
+              <p>- Remote VM streaming for mobile development/gaming/systems administration.</p>
+              <p>- Containers for video streaming, website hosting, load balancing, etc.</p>
             </li>
             <li>
               <span className="font-semibold">Robot Restoration</span>
-              <p>- Conducted regular maintenance and updates on robotic systems.</p>
-              <p>- Collaborated with a team to troubleshoot and resolve technical issues.</p>
+              <p>- Conducted regular maintenance and updates on UNR Robotics center robotic systems.</p>
             </li>
           </ul>
         </section>

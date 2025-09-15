@@ -47,13 +47,14 @@ function App() {
         </main>
       </div>
       <footer className="footer">
-  <div className="footer-content">
-    <div className="footer-left">
-      <h2 className="logo">jay knight</h2>
-      <p>&copy; 2025 jay knight. all rights reserved.</p>
-    </div>
-  </div>
-</footer>
+       <div className="footer-content">
+         <div className="footer-left">
+           <h2 className="logo">jay knight</h2>
+           <p>&copy; 2025 jay knight. all rights reserved.</p>
+           <p>built with love, hosted with care</p>
+         </div>
+       </div>
+      </footer>
     </Router>
 
   );

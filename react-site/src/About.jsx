@@ -54,7 +54,7 @@ function About() {
 				{/* Photography Showcase */}
 				<section className="resume-section">
 					<h2>Photography</h2>
-					<p>I enjoy capturing the beauty of my surroundings. Here are a few of my favorite shots:</p>
+					<p>I enjoy capturing photos of my passing moments. Here are a few of my favorites that I've stumbled into:</p>
 					<div
 						className="grid grid-cols-2 gap-4 my-4"
 						style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}
@@ -69,7 +69,7 @@ function About() {
 				{/* My Dog */}
 				<section className="resume-section">
 					<h2>My Dog</h2>
-					<p>Meet Tana, my best friend and adventure buddy! Whether we're hiking, playing fetch, or just relaxing, my dog brings so much joy to my life.</p>
+					<p>Tana, my best friend and adventure buddy! Whether we're hiking, playing fetch, or just relaxing, my dog brings so much joy to my life.</p>
                     <div className='flex justify-center gap-4 my-4'>
                         <img src={require('./img/yellow_dither_tana.png')} alt="My dog" className="tana-photo rounded-lg shadow-md object-cover my-4" />
                         <img src={require('./img/yellow_dither_tana1.png')} alt="My dog" className="tana-photo rounded-lg shadow-md object-cover my-4" />
@@ -80,7 +80,7 @@ function About() {
 				<section className="resume-header">
 					<h2>More About Me</h2>
 					<p>
-						Love retro computing, 90's internet, and all things vintage tech.
+						I love retro computing, 90's internet, and all things vintage tech.
 						<br />
 						Enthusiastic about robotics, technology, and creative projects.
                         <br />

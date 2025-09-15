@@ -2,7 +2,7 @@
   "name": "jay-knight-react-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jayknight.dev/",
+  "homepage": ".",
   "dependencies": {
     "@react-three/fiber": "^9.3.0",
     "@tailwindcss/postcss": "^4.1.13",

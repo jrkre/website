@@ -12,11 +12,16 @@ function Work() {
 
         {/* Header Card */}
         <section className="resume-header">
-          <div className="items-center justify-between mb-4">
-            <h1>jay knight</h1>
-            <p>computer science & robotics student</p>
-            <a href="https://github.com/jrkre">github.com/jrkre</a> <br />
-            <a href={resume} download>download resume</a>
+          <div className="flex items-center *:justify-center">
+            <div className="flex mr-6" style={{textAlign: 'center'}}>
+            <img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="headshot-photo rounded-lg shadow-md object-cover mx-auto mb-2" />
+            <div className="flex-col" style={{textAlign: 'justify'}}>
+							    <h1 style={{textAlign: 'justify'}}>jay knight</h1>
+                  <p style={{textAlign: 'justify'}}>computer science & robotics student</p>
+                  <a href="https://github.com/jrkre">github.com/jrkre</a> <br />
+                  <a href={resume} download>download resume</a>
+						   </div>
+            </div>
           </div>
         </section>
 

@@ -19,7 +19,7 @@ function Work() {
 							    <h1 style={{textAlign: 'justify'}}>jay knight</h1>
                   <p style={{textAlign: 'justify'}}>computer science & robotics student</p>
                   <a href="https://github.com/jrkre">github.com/jrkre</a> <br />
-                  <a href={resume} download>download resume</a>
+                  <a href={require("./static/jay_knight_resume.pdf")} download>download resume</a>
 						   </div>
             </div>
           </div>
@@ -82,6 +82,7 @@ function Work() {
             <li>
               <span className="font-semibold">Design Activity for Child-Drawn Robot Faces: Evaluating Responses to Child-Drawn Expressive Faces</span>
               <span className="text-gray-400"> — IEEE RO-MAN 2025</span>
+              <p>Denielle Oliva, Joshua Knight, Tyler J Becker, Heather Amistani, Monica Nicolescu, David Feil-Seifer</p>
               <p>Abstract: Facial expressiveness plays a crucial role in a robot’s ability to engage and interact with children. Prior research has shown that expressive robots can enhance child engagement during human-robot interactions. However, many robots used in therapy settings feature non-personalized, static faces designed with traditional facial feature considerations, which can limit the depth of interactions and emotional connections. Digital faces offer opportunities for personalization, yet the current landscape of robot face design lacks a dynamic, user-centered approach. Specifically, there is a significant research gap in designing robot faces based on child preferences. Instead, most robots in child-focused therapy spaces are developed from an adult-centric perspective. We present a novel study investigating the influence of child-drawn digital faces in child-robot interactions. This approach focuses on a design activity with children instructed to draw their own custom robot faces. We compare the perceptions of social intelligence (PSI) of two implementations: a generic digital face and a robot face personalized using the user’s drawn robot faces. The results of this study show a significant difference in the PSI of a customized agent compared to a generic face, where a customized agent was rated higher than a non-personalized agent over multiple sub-scales.</p>
             </li>
             <li>
@@ -132,7 +133,6 @@ function Work() {
 
       </div>
     </div>
-
   );
 }
 

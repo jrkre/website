@@ -11,7 +11,7 @@ function About() {
 					   <div className='flex-col'>
 						   {/* <img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="logo-sketch-photo rounded-lg shadow-md  mx-auto mb-2" /> */}
 					   		<div className="flex items-center">
-						   		<img src={require('./img/headshot_orange.png')} alt="Self portrait" className="headshot-photo rounded-lg shadow-md object-cover mx-auto mb-2" />
+						   		<img src={require('./img/dither_it_IMG_0917.png')} alt="Self portrait" className="headshot-photo rounded-lg shadow-md object-cover mx-auto mb-2" />
 						   		<div className="flex-col" style={{textAlign: 'justify'}}>
 							   		<h1 style={{textAlign: 'justify'}}>jay knight</h1>
 							   		<p style={{textAlign: 'justify'}}>about me</p>

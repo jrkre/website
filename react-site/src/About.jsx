@@ -1,71 +1,139 @@
 import './output.css';
-import './static/App.css';
+import './styles/components/About.css';
 import React from 'react';
 
 function About() {
 	return (
-		<div className="bg-gray-950 py-10 min-h-screen crt-text">
-			<div className="bg-gray-950 p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
-				{/* Header Card */}
-				   <section className="resume-header">
-					   <div className='flex-col'>
-						   {/* <img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="logo-sketch-photo rounded-lg shadow-md  mx-auto mb-2" /> */}
-					   		<div className="flex items-center">
-						   		<img src={require('./img/dither_it_IMG_0917.png')} alt="Self portrait" className="headshot-photo rounded-lg shadow-md object-cover mx-auto mb-2" />
-						   		<div className="flex-col" style={{textAlign: 'justify'}}>
-							   		<h1 style={{textAlign: 'justify'}}>jay knight</h1>
-							   		<p style={{textAlign: 'justify'}}>about me</p>
-						   	</div>
-					   	</div>
-					   </div>
-				   </section>
-
-				{/* Photography Showcase */}
-				<section className="resume-section">
-					<h2>Photography</h2>
-					<p>I enjoy capturing photos of my passing moments. Here are a few of my favorites that I've stumbled into:</p>
-					<div
-						className="grid grid-cols-2 gap-4 my-4"
-						style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}
-					>
-						<img src={require('./img/slide1.jpg')} alt="Photography 1" className="about-photo rounded-lg shadow-md object-cover" />
-						<img src={require('./img/slide2.jpg')} alt="Photography 2" className="about-photo rounded-lg shadow-md object-cover" />
-						<img src={require('./img/slide3.jpg')} alt="Photography 3" className="about-photo rounded-lg shadow-md object-cover" />
-					    <img src={require('./img/slide4.jpg')} alt="Photography 4" className="about-photo rounded-lg shadow-md object-cover" />
+		<div className="about-container">
+			{/* System Header - Terminal Style */}
+			<section className="about-terminal-header">
+				<div className="terminal-title-bar">
+					<span className="terminal-button">■</span>
+					<span className="terminal-label">USER_PROFILE.SYS</span>
+					<span className="terminal-button">□</span>
+					<span className="terminal-button">✕</span>
+				</div>
+				<div className="about-header-content">
+					<div className="about-header-grid">
+						<div className="about-headshot-container">
+							<img src={require('./img/dither_it_IMG_0917.png')} alt="Self portrait" className="about-headshot-large" />
+						</div>
+						<div className="about-header-info">
+							<div className="about-system-info">
+								<div className="system-line"><span className="system-prompt">$</span> whoami</div>
+								<div className="system-output">jay knight</div>
+								<div className="system-line"><span className="system-prompt">$</span> system --info</div>
+								<div className="system-output">developer | creator | explorer</div>
+								<div className="system-output">{`interests[] = { retro_tech, photography, adventure }`}</div>
+								{/* <div className="system-output"></div> */}
+								{/* <div className='system-output'></div> */}
+							</div>
+						</div>
 					</div>
-				</section>
-				
-				{/* More About Me */}
-				<section className="resume-header">
-					<h2>More About Me</h2>
-					<p>
-						I love retro computing, 90's internet, and all things vintage tech.
-						<br />
-						Enthusiastic about robotics, technology, and creative projects.
-                        <br />
-                        I love playing guitar, hiking, traveling, and exploring new places.
-                        <br />
-						Always up for a good book or a photography walk.
-                        <br />
-                        In my spare time I manage my own home server, dabbling in various self-hosted applications and services (this site is running on my own machine!).
-						<br />
-					</p>
-				</section>
+				</div>
+			</section>
+			<section className="about-module">
+				<div className="module-header">
+					<div className="module-title">
+						<span className="module-icon">►</span>USER_BIO
+					</div>
+				</div>
+				<div className="module-content">
+					<p className="module-description">I'm Jay, a software developer and tech enthusiast based in <span className="location-tag">us-west</span>. I enjoy building web applications, exploring new technologies, and capturing moments through photography.</p>
+					<p className="module-description">When I’m not coding or behind a camera, you can find me hiking with my dog Tana, tinkering with retro computers, or experimenting with electronics projects.</p>
+					<p className="module-description">Feel free to explore my site to see some of my work and interests!</p>
+				</div>
+			</section>
 
-				{/* My Dog */}
-				<section className="resume-section">
-					<h2>My Dog</h2>
-					<p>Tana, my best friend and adventure buddy! Whether we're hiking, playing fetch, or just relaxing, my dog brings so much joy to my life.</p>
-                    <div className='flex justify-center gap-4 my-4'>
-                        <img src={require('./img/yellow_dither_tana.png')} alt="My dog" className="tana-photo rounded-lg shadow-md object-cover my-4" />
-                        <img src={require('./img/yellow_dither_tana1.png')} alt="My dog" className="tana-photo rounded-lg shadow-md object-cover my-4" />
-                    </div>
-				</section>
+			{/* Photography Section - Grid Display */}
+			<section className="about-module">
+				<div className="module-header">
+					<div className="module-title">
+						<span className="module-icon">◆</span> MEDIA_ARCHIVE
+					</div>
+				</div>
+				<div className="module-content">
+					<p className="module-description">I like taking photos of everyday moments. Here are a few favorites I’ve managed to catch along the way:</p>
+					<div className="about-photo-grid">
+						<div className="about-photo-card">
+							<img src={require('./img/slide1.jpg')} alt="Photography 1" className="about-photo" />
+						</div>
+						<div className="about-photo-card">
+							<img src={require('./img/slide2.jpg')} alt="Photography 2" className="about-photo" />
+						</div>
+						<div className="about-photo-card">
+							<img src={require('./img/slide3.jpg')} alt="Photography 3" className="about-photo" />
+						</div>
+						<div className="about-photo-card">
+							<img src={require('./img/slide4.jpg')} alt="Photography 4" className="about-photo" />
+						</div>
+					</div>
+				</div>
+			</section>
 
-				<section className="sketch-background">
-					<img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="logo-sketch-photo rounded-lg shadow-md  mx-auto mb-2" />
-				</section>
-			</div>
+			{/* Interests & Passions Section */}
+			<section className="about-module">
+				<div className="module-header">
+					<div className="module-title">
+						<span className="module-icon">►</span> USER_ATTRIBUTES
+					</div>
+				</div>
+				<div className="module-content">
+					<div className="about-attributes-list">
+						<div className="about-attribute-item">
+							<span className="attribute-label">[RETRO_TECH]</span>
+							<p>I’m love retro computing, 90s internet culture, and pretty much anything involving vintage technology, history, and technical design constraints.</p>
+						</div>
+						<div className="about-attribute-item">
+							<span className="attribute-label">[ROBOTICS]</span>
+							<p>Building things-from circuits to 3D prints to code. I find it extremely satisfying to turn ideas into tangible projects.</p>
+						</div>
+						<div className="about-attribute-item">
+							<span className="attribute-label">[CREATIVE]</span>
+							<p>Outside of tech, I like to sew clothes, play guitar, get outdoors, and travel when I have the chance.</p>
+						</div>
+						<div className="about-attribute-item">
+							<span className="attribute-label">[MEDIA]</span>
+							<p>I spend a lot of time on photography and reading. I think both are about paying attention - slowing down and examining things closely.</p>
+						</div>
+						<div className="about-attribute-item">
+							<span className="attribute-label">[SYSADMIN]</span>
+							<p>I enjoy experimenting with something new on my home server. This site actually runs on that server.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Companion Section - Tana */}
+			<section className="about-module">
+				<div className="module-header">
+					<div className="module-title">
+						<span className="module-icon">◇</span> USER_COMPANION
+					</div>
+				</div>
+				<div className="module-content">
+					<p className="module-description">Tana is my adventure buddy and all-around good dog. Whether we’re hiking, playing fetch, or just hanging out, she makes life better.</p>
+					<div className="about-companion-gallery">
+						<div className="about-companion-card">
+							<img src={require('./img/yellow_dither_tana.png')} alt="Tana" className="about-companion-photo" />
+						</div>
+						<div className="about-companion-card">
+							<img src={require('./img/yellow_dither_tana1.png')} alt="Tana" className="about-companion-photo" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Footer Section - Lambda Logo */}
+			<section className="about-module about-footer-module">
+				<div className="about-footer-content">
+					<img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="about-lambda-logo" />
+					<div className="about-footer-text">
+						<p>Built and deployed from my home server.</p>
+						<p className="footer-timestamp">{`> system_uptime: too_damn_long`}</p>
+					</div>
+				</div>
+			</section>
 		</div>
 	);
 }

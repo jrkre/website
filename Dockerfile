@@ -18,8 +18,8 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 
 # Copy custom nginx config if needed (optional)
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/
 
-EXPOSE 80
+EXPOSE 5000
 
 CMD ["nginx", "-g", "daemon off;"]

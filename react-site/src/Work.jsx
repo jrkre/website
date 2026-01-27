@@ -1,6 +1,5 @@
 import './output.css';
 import './static/App.css';
-import resume from './static/jay_knight_resume.pdf';
 
 
 function Work() {

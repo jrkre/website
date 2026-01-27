@@ -29,7 +29,7 @@ function Work() {
                   → github.com/jrkre
                 </a>
                 <br />
-                <a href={require("./static/jay_knight_resume.pdf")} download>
+                <a href={require("./static/Knight, Jay - resume web.pdf")} download>
                   → Download Resume
                 </a>
               </div>
@@ -42,8 +42,7 @@ function Work() {
           <h2>Education</h2>
           <h3>University of Nevada, Reno</h3>
           <ul>
-            <li>B.S. Computer Science and Engineering, Minor in Mathematics and Robotics</li>
-            <li>M.S. Robotics, Focus in Socially Assistive Robotics</li>
+            <li>B.S. Computer Science and Engineering, Minor in Mathematics</li>
           </ul>
         </section>
 
@@ -57,7 +56,10 @@ function Work() {
                 <span className="skill-tag">C/C++</span>
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">ROS/ROS2</span>
+                <span className="skill-tag">C#</span>
                 <span className="skill-tag">.NET Core</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">React</span>
                 <span className="skill-tag">NodeJS</span>
                 <span className="skill-tag">Haskell</span>
                 <span className="skill-tag">Bash</span>
@@ -70,13 +72,15 @@ function Work() {
             <div className="skills-category">
               <div className="skills-category-label">Tools & Technologies</div>
               <div className="skills-tags">
-                <span className="skill-tag">AutoCAD</span>
-                <span className="skill-tag">Blender</span>
                 <span className="skill-tag">Research</span>
-                <span className="skill-tag">Web Dev</span>
-                <span className="skill-tag">Azure Deployments</span>
                 <span className="skill-tag">SysAdmin</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Web Dev</span>
+                <span className="skill-tag">Kubernetes</span>
+                <span className="skill-tag">Azure Deployments</span>
                 <span className="skill-tag">Git</span>
+                <span className="skill-tag">Blender</span>
+                <span className="skill-tag">AutoCAD</span>
               </div>
             </div>
 
@@ -86,7 +90,7 @@ function Work() {
                 <span className="skill-tag">Embedded Systems Design</span>
                 <span className="skill-tag">Project Management</span>
                 <span className="skill-tag">Technical Writing</span>
-                <span className="skill-tag">Presentations</span>
+                <span className="skill-tag">Presentation</span>
               </div>
             </div>
           </div>
@@ -152,6 +156,24 @@ function Work() {
         <section className="resume-section">
           <h2>Projects</h2>
           <ul>
+            <li>
+              <span className="font-semibold">Bloom</span>
+              <div>
+                - Full-stack web application for managing social robots in a clinical setting; designed to streamline robot deployment, data collection, and patient growth.
+                <br/>
+                - Built with React frontend, .NET backend, and Jenkins CI/CD. 
+                <br/>
+                - Technical lead for Robotics senior capstone project, owned the full lifecycle from requirements elicitation to agile execution and delivery.
+              </div>
+              <a
+              href="https://bloom.nevada.dev/about"
+              className="publication-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              → View site
+            </a>
+            </li>
             <li>
               <span className="font-semibold">'HomeLab'</span>
               <div style={{marginTop: '0.25rem', marginLeft: '0'}}>

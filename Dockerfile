@@ -9,9 +9,9 @@ FROM node:20-alpine AS react-build
 WORKDIR /app/react-site
 
 COPY react-site/package*.json ./
-RUN npm install
-
 ENV NODE_ENV=development
+
+RUN npm install
 
 COPY react-site ./
 RUN npm run build

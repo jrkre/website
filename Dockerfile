@@ -5,6 +5,8 @@ WORKDIR /app/react-site
 COPY react-site/package*.json ./
 RUN npm install
 
+ENV NODE_ENV=development
+
 COPY react-site ./
 RUN npm run build
 
@@ -14,11 +16,14 @@ FROM node:20-alpine
 # Install nginx
 RUN apk add --no-cache nginx
 
+ENV NODE_ENV=production
+
 # Setup backend
 WORKDIR /app/server
 COPY server/package*.json ./
 RUN npm install --production
 COPY server ./
+
 
 # Copy React build from stage 1
 COPY --from=react-build /app/react-site/build /usr/share/nginx/html

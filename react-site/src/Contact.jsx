@@ -32,7 +32,7 @@ function Contact() {
       if (response.ok && data.success) {
         setStatusMessage('Email sent successfully! I\'ll get back to you ASAP 🙂');
         setMessageType('success');
-        formRef.current.reset();
+        e.target.reset();
         setTimeout(() => {
           setStatusMessage('');
         }, 5000);
@@ -53,6 +53,7 @@ function Contact() {
       setIsSubmitting(false);
     }
   }
+
   return (
     <div className="min-h-screen flex items-center site justify-center">
       <div className="max-w-md p-8 rounded-2xl shadow-lg resume-header crt-text" style={{width: '50%'}}>

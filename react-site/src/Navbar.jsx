@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import './static/App.css';
+import './static/Navbar.css';
 import logo from './static/jk_logo.svg';
 import { Link } from 'react-router-dom';
 

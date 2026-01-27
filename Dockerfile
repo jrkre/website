@@ -1,3 +1,9 @@
+# Use official Node.js image for build step
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+# Copy package files and install dependencies
 # Stage 1: Build React frontend
 FROM node:20-alpine AS react-build
 WORKDIR /app/react-site

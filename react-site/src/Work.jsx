@@ -1,21 +1,14 @@
 import './output.css';
-import React, { useState } from 'react';
+import './static/App.css';
+import resume from './static/jay_knight_resume.pdf';
 
 
 function Work() {
-  const [expandedAbstracts, setExpandedAbstracts] = useState({});
-
-  const toggleAbstract = (id) => {
-    setExpandedAbstracts(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
 
   return (
-     <div className="bg-gray-950 py-10 min-h-screen flex justify-center">
+     <div className="bg-gray-950 py-10 min-h-screen">
       {/* Resume Container */}
-      <div className="bg-gray-950 p-8 rounded-2xl shadow-lg max-w-4xl crt-text" style={{width: '66.667%'}}>
+      <div className=" bg-gray-950 p-8 rounded-2xl shadow-lg w-full mx-auto crt-text">
 
         {/* Header Card */}
         <section className="resume-header">
@@ -101,55 +94,40 @@ function Work() {
           <h2>Experience</h2>
           <h3>Undergraduate Researcher - UNR SARG <span className="text-gray-400 text-sm">(Aug 2023 - Present)</span></h3>
           <ul>
-            <li>Made significant contributions to the AI Institute for Exceptional Education and personalized learning.</li>
-            <li>Designed study and software solution for customizable robot faces for children.</li>
-            <li>Implemented a student-learning platform for educational robotics simulations. The platform integrates AI tools to study adaptive learning.</li>
-            <li>Implemented low-level drivers for low-cost educational robotics platforms.</li>
+            <li><p>Made significant contributions to the AI Institute for Exceptional Education and personalized learning.</p></li>
+            <li><p>Designed study and software solution for customizable robot faces for children.</p></li>
+            <li><p>Implemented a student-learning platform for educational robotics simulations. The platform integrates AI tools to study adaptive learning.</p></li>
+            <li><p>Implemented low-level drivers for low-cost educational robotics platforms.</p></li>
           </ul>
           <h3>REU Researcher - UNR SARG <span className="text-gray-400 text-sm">(Jun 2023 - Aug 2023)</span></h3>
           <ul>
-            <li>Researched architectural solutions for human-robot collaboration.</li>
-            <li>Built an interruption-aware dynamic task tree. Tested on PR2 robot.</li>
+            <li><p>Researched architectural solutions for human-robot collaboration.</p></li>
+            <li><p>Built an interruption-aware dynamic task tree. Tested on PR2 robot.</p></li>
           </ul>
           <h3>K-12 Robotics Education Assistant - Nevada Robotics @ DRI <span className="text-gray-400 text-sm">(Nov 2021 - Aug 2024)</span></h3>
           <ul>
-            <li>Managed statewide robotics lending library.</li>
-            <li>Modernized inventory system with barcoding, order tracking, and dynamic reporting to assist in grant writing.</li>
-            <li>Developed and delivered professional development workshops for K-12 educators on robotics integration in the classroom.</li>
-            <li>Created a comprehensive curriculum guide for K-12 robotics education.</li>
+            <li><p>Managed statewide robotics lending library.</p></li>
+            <li><p>Modernized inventory system with barcoding, order tracking, and dynamic reporting to assist in grant writing.</p></li>
+            <li><p>Developed and delivered professional development workshops for K-12 educators on robotics integration in the classroom.</p></li>
+            <li><p>Created a comprehensive curriculum guide for K-12 robotics education.</p></li>
           </ul>
         </section>
 
         {/* Publications */}
         <section className="resume-section">
           <h2>Publications</h2>
-
-          <div className="publication-item">
-            <span className="publication-title">
-              Design Activity for Child-Drawn Robot Faces: Evaluating Responses to Child-Drawn Expressive Faces
-            </span>
-            <span className="publication-venue">— IEEE RO-MAN 2025</span>
-            <p className="publication-authors">
-              Denielle Oliva, Joshua Knight, Tyler J Becker, Heather Amistani, Monica Nicolescu, David Feil-Seifer
-            </p>
-            <div className={`publication-abstract ${expandedAbstracts['roman2025'] ? '' : 'collapsed'}`}>
-              <strong>Abstract:</strong> Facial expressiveness plays a crucial role in a robot's ability to engage and interact with children. Prior research has shown that expressive robots can enhance child engagement during human-robot interactions. However, many robots used in therapy settings feature non-personalized, static faces designed with traditional facial feature considerations, which can limit the depth of interactions and emotional connections. Digital faces offer opportunities for personalization, yet the current landscape of robot face design lacks a dynamic, user-centered approach. Specifically, there is a significant research gap in designing robot faces based on child preferences. Instead, most robots in child-focused therapy spaces are developed from an adult-centric perspective. We present a novel study investigating the influence of child-drawn digital faces in child-robot interactions. This approach focuses on a design activity with children instructed to draw their own custom robot faces. We compare the perceptions of social intelligence (PSI) of two implementations: a generic digital face and a robot face personalized using the user's drawn robot faces. The results of this study show a significant difference in the PSI of a customized agent compared to a generic face, where a customized agent was rated higher than a non-personalized agent over multiple sub-scales.
-            </div>
-            <button
-              className="expand-toggle"
-              onClick={() => toggleAbstract('roman2025')}
-            >
-              {expandedAbstracts['roman2025'] ? '▼ Show less' : '▶ Read abstract'}
-            </button>
-            <a
-              href="https://arxiv.org/abs/2504.08117"
-              className="publication-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              → View publication
-            </a>
-          </div>
+          <ul>
+            <li>
+              <span className="font-semibold">Design Activity for Child-Drawn Robot Faces: Evaluating Responses to Child-Drawn Expressive Faces</span>
+              <span className="text-gray-400"> — IEEE RO-MAN 2025</span>
+              <p>Denielle Oliva, Joshua Knight, Tyler J Becker, Heather Amistani, Monica Nicolescu, David Feil-Seifer</p>
+              <p>Abstract: Facial expressiveness plays a crucial role in a robot’s ability to engage and interact with children. Prior research has shown that expressive robots can enhance child engagement during human-robot interactions. However, many robots used in therapy settings feature non-personalized, static faces designed with traditional facial feature considerations, which can limit the depth of interactions and emotional connections. Digital faces offer opportunities for personalization, yet the current landscape of robot face design lacks a dynamic, user-centered approach. Specifically, there is a significant research gap in designing robot faces based on child preferences. Instead, most robots in child-focused therapy spaces are developed from an adult-centric perspective. We present a novel study investigating the influence of child-drawn digital faces in child-robot interactions. This approach focuses on a design activity with children instructed to draw their own custom robot faces. We compare the perceptions of social intelligence (PSI) of two implementations: a generic digital face and a robot face personalized using the user’s drawn robot faces. The results of this study show a significant difference in the PSI of a customized agent compared to a generic face, where a customized agent was rated higher than a non-personalized agent over multiple sub-scales.</p>
+            </li>
+            <li>
+              <span className="font-semibold">Architectural Solution for Tightly-Coupled Robot Collaborative Tasks</span>
+              <span className="text-gray-400"> — IROS 2024 (Submitted)</span>
+            </li>
+          </ul>
         </section>
 
         {/* Projects */}
@@ -184,9 +162,7 @@ function Work() {
             </li>
             <li>
               <span className="font-semibold">Robot Restoration</span>
-              <div style={{marginTop: '0.25rem'}}>
-                - Conducted regular maintenance and updates on UNR Robotics center robotic systems.
-              </div>
+              <p>- Conducted regular maintenance and updates on UNR Robotics center robotic systems.</p>
             </li>
           </ul>
         </section>
@@ -198,16 +174,18 @@ function Work() {
             <li>
               <span className="font-semibold">UNR Robotics Club President</span>
               <span className="text-gray-400"> (Dec 2022 - May 2024)</span>
-              <div style={{marginTop: '0.25rem'}}>
-                Secured $10k in grants, supported K-12 outreach.
-              </div>
+              <br />
+              <p>Secured $10k in grants, supported K-12 outreach.</p>
             </li>
             <li>
               <span className="font-semibold">FBLA State Champion - Mobile App Dev</span>
               <span className="text-gray-400"> (May 2018)</span>
-              <div style={{marginTop: '0.25rem'}}>
-                Collaborated in a small team to create and pitch a social media garage-sale themed fundraising app. Lead the backend development. Implemented a .NET Core 4 REST API with database, file management, and administration/moderation tooling to support the app.
-              </div>
+              <br />
+              <p>Collaborated in a small team to create and pitch a social media garage-sale themed fundraising app.
+              Lead the backend development. 
+              Implemented a .NET Core 4 REST API with database, file management, and administration/moderation tooling to support the app.
+              </p>
+            
             </li>
           </ul>
         </section>

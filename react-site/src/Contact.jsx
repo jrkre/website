@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -7,39 +6,54 @@ function Contact() {
   const [messageType, setMessageType] = useState(''); // 'success' or 'error'
   const formRef = useRef();
 
-  // Initialize EmailJS
-  React.useEffect(() => {
-    emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
-  }, []);
-
-  function sendEmail(e) {
+  async function sendEmail(e) {
     e.preventDefault();
     setIsSubmitting(true);
     setStatusMessage('');
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formRef.current,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-      .then((result) => {
+    const formData = {
+      name: formRef.current.name.value,
+      email: formRef.current.email.value,
+      subject: formRef.current.subject.value,
+      message: formRef.current.message.value
+    };
+
+    try {
+      const response = await fetch('/api/contact/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         setStatusMessage('Email sent successfully! I\'ll get back to you ASAP 🙂');
         setMessageType('success');
-        formRef.current.reset();
+        e.target.reset();
         setTimeout(() => {
           setStatusMessage('');
         }, 5000);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        setStatusMessage('Error sending email. Please try again.');
+      } else {
+        // Handle validation errors or rate limiting
+        if (data.errors) {
+          setStatusMessage(data.errors.map(e => e.msg).join(', '));
+        } else {
+          setStatusMessage(data.message || 'Error sending email. Please try again.');
+        }
         setMessageType('error');
-      })
-      .finally(() => {
-        setIsSubmitting(false);
-      });
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatusMessage('Network error. Please check your connection and try again.');
+      setMessageType('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   }
+
   return (
     <div className="min-h-screen flex items-center site justify-center">
       <div className="max-w-md p-8 rounded-2xl shadow-lg resume-header crt-text" style={{width: '50%'}}>

@@ -1,0 +1,311 @@
+/* Work/Resume Page Specific Styles */
+
+.resume {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+  color: #222;
+  line-height: 1.8;
+}
+
+.resume-section {
+  border-left: 3px solid #7d6000;
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: larger;
+}
+
+.resume-section:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.resume-section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #F4B43E;
+}
+
+.resume-section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #F4B43E;
+}
+
+.resume-section h3:first-of-type {
+  margin-top: 0;
+}
+
+.resume-section p,
+.resume-section ul {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* make li bullets */
+.resume-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.resume-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.resume-section li:last-child {
+  margin-bottom: 0;
+}
+
+.resume-section li p {
+  display: inline;
+  margin: 0;
+}
+
+.sketch-background {
+  background: #ef767a;
+  background: linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  background: -moz-linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  background: -webkit-linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF767A", endColorstr="#7D7ABC", GradientType=1 );
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+  text-align: center;
+  border: 1.5px solid #27272a;
+}
+
+.resume-header {
+  background: #ef767a;
+  background: linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  background: -moz-linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  background: -webkit-linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF767A", endColorstr="#7D7ABC", GradientType=1 );
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+  text-align: center;
+  border: 1.5px solid #27272a;
+}
+
+.resume-header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #F4B43E;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.resume-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #F4B43E;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.resume-header p {
+  font-size: 1.2rem;
+  color: #47495e;
+  margin-bottom: 0;
+}
+
+/* Skills Grid Container */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-category-label {
+  font-weight: 700;
+  color: #F4B43E;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+}
+
+/* Skill Tags/Badges */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.4rem 0.85rem;
+  background: rgba(244, 180, 62, 0.08);
+  border: 1px solid rgba(244, 180, 62, 0.35);
+  border-radius: 0.25rem;
+  color: #F4B43E;
+  font-size: 0.85rem;
+  font-family: 'Consolas', monospace;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 5px rgba(244, 180, 62, 0.08);
+  white-space: nowrap;
+}
+
+.skill-tag:hover {
+  background: rgba(244, 180, 62, 0.15);
+  border-color: rgba(244, 180, 62, 0.5);
+  box-shadow: 0 0 12px rgba(244, 180, 62, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Publication Styles */
+.publication-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(244, 180, 62, 0.1);
+}
+
+.publication-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.publication-title {
+  font-weight: 700;
+  color: #F4B43E;
+  margin-bottom: 0.25rem;
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.publication-venue {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-style: italic;
+}
+
+.publication-authors {
+  font-size: 0.85rem;
+  color: #d1d5db;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.publication-abstract {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+  margin-top: 0.5rem;
+}
+
+.publication-abstract.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.expand-toggle {
+  color: #F4B43E;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.5rem;
+  font-family: 'Consolas', monospace;
+  transition: opacity 0.2s;
+  display: inline-block;
+}
+
+.expand-toggle:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.publication-link {
+  color: #F4B43E;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+  font-family: 'Consolas', monospace;
+}
+
+.publication-link:hover {
+  border-bottom-color: #F4B43E;
+}
+
+/* Header improvements */
+.resume-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resume-header-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.resume-header a {
+  color: #F4B43E;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.resume-header a:hover {
+  border-bottom-color: #F4B43E;
+}
+
+@media (max-width: 600px) {
+  .resume-section, .resume-header {
+    padding: 1.2rem 0.7rem;
+  }
+
+  .skills-tags {
+    gap: 0.5rem;
+  }
+
+  .skill-tag {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .resume-header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

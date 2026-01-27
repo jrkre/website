@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import './static/App.css';
 import logo from './static/jk_logo_mask.svg';
 
 const LOGO_WIDTH = 450; // adjust to your overlay logo's width

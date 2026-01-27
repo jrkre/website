@@ -1,0 +1,49 @@
+/* Home Page Specific Styles */
+
+.home80s {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 3rem;
+  padding: 2rem;
+  background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+  position: relative;
+}
+
+/* Headshot */
+.headshot80s {
+  height: clamp(250px, 25vw, 400px);
+  border-radius: 4%;
+  box-shadow: 0 0 15px #f0b64c33;
+}
+
+/* Terminal Text */
+.terminal {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+.cursor80s {
+  display: inline-block;
+  width: 1ch;
+  animation: blink80s 1s steps(1) infinite;
+}
+
+@keyframes blink80s {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Cat GIF */
+.gif80s {
+  margin-top: 2rem;
+  border: none;
+  opacity: 0.9;
+  filter: contrast(1.1) saturate(1.3);
+}

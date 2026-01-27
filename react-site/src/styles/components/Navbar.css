@@ -1,0 +1,130 @@
+/* Navbar/Topbar Component Styles */
+
+/* === Topbar Styling === */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #000;
+  color: #F4B43E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 40;
+  border-bottom: 2px solid #F4B43E;
+}
+
+.topbar .logo-text {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #F4B43E;
+}
+
+.topbar-logo img {
+  height: 65px;
+  margin-right: 0.5rem;
+  padding: .5rem;
+}
+
+.topbar-logo .crt-logo {
+  display: inline-block;
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: large;
+  color: #F4B43E;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Hamburger === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 60;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #f4b43e;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* === Mobile Dropdown === */
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border-top: 1px solid #f4b43e44;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 40;
+}
+
+.nav-mobile a {
+  color: #f4b43e;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.nav-mobile a:hover {
+  background: rgba(255, 180, 60, 0.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

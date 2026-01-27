@@ -12,15 +12,20 @@ function Work() {
 
         {/* Header Card */}
         <section className="resume-header">
-          <div className="flex items-center *:justify-center">
-            <div className="flex mr-6" style={{textAlign: 'center'}}>
-            <img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="headshot-photo rounded-lg shadow-md object-cover mx-auto mb-2" />
-            <div className="flex-col" style={{textAlign: 'justify'}}>
-							    <h1 style={{textAlign: 'justify'}}>jay knight</h1>
-                  <p style={{textAlign: 'justify'}}>computer science & robotics student</p>
-                  <a href="https://github.com/jrkre">github.com/jrkre</a> <br />
-                  <a href={require("./static/jay_knight_resume.pdf")} download>download resume</a>
-						   </div>
+          <div className="resume-header-content">
+            <img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="headshot-photo rounded-lg shadow-md object-cover" />
+            <div className="resume-header-text">
+              <h1>jay knight</h1>
+              <p>Computer Science & Robotics Student</p>
+              <div style={{marginTop: '1rem'}}>
+                <a href="https://github.com/jrkre" target="_blank" rel="noopener noreferrer">
+                  → github.com/jrkre
+                </a>
+                <br />
+                <a href={require("./static/Knight, Jay - resume web.pdf")} download>
+                  → Download Resume
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -30,23 +35,56 @@ function Work() {
           <h2>Education</h2>
           <h3>University of Nevada, Reno</h3>
           <ul>
-            <li>B.S. Computer Science and Engineering, Minor in Mathematics and Robotics</li>
-            <li>M.S. Robotics, Focus in Socially Assistive Robotics</li>
+            <li>B.S. Computer Science and Engineering, Minor in Mathematics</li>
           </ul>
         </section>
 
         {/* Skills */}
         <section className="resume-section">
           <h2>Skills</h2>
-          <div>
-            <div>
-              <span className="font-semibold skills text-gray-400">Languages/Frameworks:</span> MacOS, Linux, Windows | ROS/ROS2, C/C++, Python, .NET Core, NodeJS, Haskell, Bash
+          <div className="skills-grid">
+            <div className="skills-category">
+              <div className="skills-category-label">Languages & Frameworks</div>
+              <div className="skills-tags">
+                <span className="skill-tag">C/C++</span>
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">ROS/ROS2</span>
+                <span className="skill-tag">C#</span>
+                <span className="skill-tag">.NET Core</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">React</span>
+                <span className="skill-tag">NodeJS</span>
+                <span className="skill-tag">Haskell</span>
+                <span className="skill-tag">Bash</span>
+                <span className="skill-tag">MacOS</span>
+                <span className="skill-tag">Linux</span>
+                <span className="skill-tag">Windows</span>
+              </div>
             </div>
-            <div>
-              <span className="font-semibold skills text-gray-400">Tools:</span> AutoCAD, Blender | Research, Web Dev, Azure Deployments, SysAdmin, Git
+
+            <div className="skills-category">
+              <div className="skills-category-label">Tools & Technologies</div>
+              <div className="skills-tags">
+                <span className="skill-tag">Research</span>
+                <span className="skill-tag">SysAdmin</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Web Dev</span>
+                <span className="skill-tag">Kubernetes</span>
+                <span className="skill-tag">Azure Deployments</span>
+                <span className="skill-tag">Git</span>
+                <span className="skill-tag">Blender</span>
+                <span className="skill-tag">AutoCAD</span>
+              </div>
             </div>
-            <div>
-              <span className="font-semibold skills text-gray-400">Other:</span> Embedded Systems Design, Project Management, Technical Writing, Presentations
+
+            <div className="skills-category">
+              <div className="skills-category-label">Other Competencies</div>
+              <div className="skills-tags">
+                <span className="skill-tag">Embedded Systems Design</span>
+                <span className="skill-tag">Project Management</span>
+                <span className="skill-tag">Technical Writing</span>
+                <span className="skill-tag">Presentation</span>
+              </div>
             </div>
           </div>
         </section>
@@ -97,9 +135,30 @@ function Work() {
           <h2>Projects</h2>
           <ul>
             <li>
-              <span className="font-semibold">'HomeLab'</span> 
-              <p>- Remote VM streaming for mobile development/gaming/systems administration.</p>
-              <p>- Containers for video streaming, website hosting, load balancing, etc.</p>
+              <span className="font-semibold">Bloom</span>
+              <div>
+                - Full-stack web application for managing social robots in a clinical setting; designed to streamline robot deployment, data collection, and patient growth.
+                <br/>
+                - Built with React frontend, .NET backend, and Jenkins CI/CD. 
+                <br/>
+                - Technical lead for Robotics senior capstone project, owned the full lifecycle from requirements elicitation to agile execution and delivery.
+              </div>
+              <a
+              href="https://bloom.nevada.dev/about"
+              className="publication-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              → View site
+            </a>
+            </li>
+            <li>
+              <span className="font-semibold">'HomeLab'</span>
+              <div style={{marginTop: '0.25rem', marginLeft: '0'}}>
+                - Remote VM streaming for mobile development/gaming/systems administration.
+                <br/>
+                - Containers for video streaming, website hosting, load balancing, etc.
+              </div>
             </li>
             <li>
               <span className="font-semibold">Robot Restoration</span>

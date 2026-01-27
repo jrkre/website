@@ -1,0 +1,28 @@
+# Backend
+server/node_modules/
+server/.env
+server/.env.local
+server/.env.production
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend
+react-site/node_modules/
+react-site/build/
+react-site/.env.local
+react-site/.env.development.local
+react-site/.env.test.local
+react-site/.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.env

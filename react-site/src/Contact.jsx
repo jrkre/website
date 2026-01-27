@@ -1,24 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
   const [messageType, setMessageType] = useState(''); // 'success' or 'error'
+  const formRef = useRef();
 
   async function sendEmail(e) {
     e.preventDefault();
     setIsSubmitting(true);
     setStatusMessage('');
 
-    const formData = new FormData(e.target);
+    const formData = {
+      name: formRef.current.name.value,
+      email: formRef.current.email.value,
+      subject: formRef.current.subject.value,
+      message: formRef.current.message.value
+    };
 
     try {
-      const response = await fetch('https://lk.shooba.info/api/email/send', {
+      const response = await fetch('/api/contact/send', {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         setStatusMessage('Email sent successfully! I\'ll get back to you ASAP 🙂');
         setMessageType('success');
         e.target.reset();
@@ -26,12 +37,17 @@ function Contact() {
           setStatusMessage('');
         }, 5000);
       } else {
-        setStatusMessage('Error sending email. Please try again.');
+        // Handle validation errors or rate limiting
+        if (data.errors) {
+          setStatusMessage(data.errors.map(e => e.msg).join(', '));
+        } else {
+          setStatusMessage(data.message || 'Error sending email. Please try again.');
+        }
         setMessageType('error');
       }
     } catch (error) {
       console.error('Error:', error);
-      setStatusMessage('Error sending email. Please try again.');
+      setStatusMessage('Network error. Please check your connection and try again.');
       setMessageType('error');
     } finally {
       setIsSubmitting(false);

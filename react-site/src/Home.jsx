@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import headshot from './img/headshot_orange.png';
+import headshot from './img/dithered_headshot_2.png';
 
 function Home() {
   const lines = [

@@ -14,9 +14,15 @@
 
 /* Headshot */
 .headshot80s {
-  height: clamp(250px, 25vw, 400px);
-  border-radius: 4%;
-  box-shadow: 0 0 15px #f0b64c33;
+  height: clamp(400px, 30vw, 600px);
+  border-radius: 5%;
+  box-shadow: 0 0 15px, rgba(240, 183, 76, 0.308);
+}
+
+@media (min-width: 1000px) {
+  .headshot80s {
+    height: clamp(400px, 30vw, 1200px);
+  }
 }
 
 /* Terminal Text */

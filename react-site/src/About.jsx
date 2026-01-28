@@ -82,11 +82,11 @@ function About() {
 					<div className="about-attributes-list">
 						<div className="about-attribute-item">
 							<span className="attribute-label">[RETRO_TECH]</span>
-							<p>I’m love retro computing, 90s internet culture, and pretty much anything involving vintage technology, history, and technical design constraints.</p>
+							<p>I love retro computing, 90s internet culture, and pretty much anything involving vintage technology, history, and technical design constraints.</p>
 						</div>
 						<div className="about-attribute-item">
 							<span className="attribute-label">[ROBOTICS]</span>
-							<p>Building things-from circuits to 3D prints to code. I find it extremely satisfying to turn ideas into tangible projects.</p>
+							<p>Building things - from circuits to 3D prints to code. I find it extremely satisfying to turn ideas into tangible projects.</p>
 						</div>
 						<div className="about-attribute-item">
 							<span className="attribute-label">[CREATIVE]</span>
@@ -94,7 +94,7 @@ function About() {
 						</div>
 						<div className="about-attribute-item">
 							<span className="attribute-label">[MEDIA]</span>
-							<p>I spend a lot of time on photography and reading. I think both are about paying attention - slowing down and examining things closely.</p>
+							<p>I spend a lot of time with photography and reading. I think both are about paying attention - slowing down and examining things closely.</p>
 						</div>
 						<div className="about-attribute-item">
 							<span className="attribute-label">[SYSADMIN]</span>
@@ -130,7 +130,7 @@ function About() {
 					<img src={require('./img/Lambda-no-background.png')} alt="Lambda School Logo" className="about-lambda-logo" />
 					<div className="about-footer-text">
 						<p>Built and deployed from my home server.</p>
-						<p className="footer-timestamp">{`> system_uptime: too_damn_long`}</p>
+						<p className="footer-timestamp">{`> system_uptime: too_long`}</p>
 					</div>
 				</div>
 			</section>

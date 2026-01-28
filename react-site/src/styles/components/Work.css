@@ -228,6 +228,13 @@
   overflow: hidden;
 }
 
+.experience-details {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #9c9c9c;
+  margin-top: 0.5rem;
+}
+
 .expand-toggle {
   color: #F4B43E;
   cursor: pointer;

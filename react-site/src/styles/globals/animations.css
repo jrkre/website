@@ -6,18 +6,6 @@
   to { opacity: 1; }
 }
 
-/* CRT Flicker Effect */
-@keyframes crt-flicker {
-  0%, 100% { opacity: 0.9; }
-  50% { opacity: 1; }
-}
-
-/* CRT Flicker (alternative timing) */
-@keyframes crtFlicker {
-  0%, 100% { opacity: 0.98; }
-  50% { opacity: 1; }
-}
-
 /* Scanlines Overlay */
 body::after {
   content: "";

@@ -1,11 +1,5 @@
 /* CRT Theme and Visual Effects */
 
-/* CRT Flicker Animation */
-@keyframes crtFlicker {
-  0%, 100% { opacity: 0.99; }
-  50% { opacity: 1; }
-}
-
 /* Scanline overlay effect */
 body::after {
   content: "";

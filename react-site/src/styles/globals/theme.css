@@ -21,7 +21,6 @@ html, body {
   text-shadow: 0 0 4px #f0b64c88, 0 0 12px #f0b64c55;
   margin: 0;
   padding: 0;
-  animation: crtFlicker 0.1s infinite;
 }
 
 body {

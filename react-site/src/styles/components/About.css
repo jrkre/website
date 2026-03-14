@@ -6,7 +6,8 @@
   background-color: #000;
   color: #f0b64c;
   padding: 2rem 1rem;
-  font-family: 'Consolas', monospace;
+  font-family: 'JetbrainsMono', monospace;
+  font-weight: 300;
   text-shadow: 0 0 2px #f0b64c, 0 0 5px #f3bf60;
   margin: 0 auto;
   width: 50%;

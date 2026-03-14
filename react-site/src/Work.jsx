@@ -53,33 +53,38 @@ function Work() {
           <h2>Skills</h2>
           <div className="skills-grid">
             <div className="skills-category">
-              <div className="skills-category-label">Languages & Frameworks</div>
+              <div className="skills-category-label">Languages</div>
               <div className="skills-tags">
                 <span className="skill-tag">C/C++</span>
                 <span className="skill-tag">Python</span>
-                <span className="skill-tag">ROS/ROS2</span>
                 <span className="skill-tag">C#</span>
-                <span className="skill-tag">.NET Core</span>
+                <span className="skill-tag">Bash</span>
                 <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">Haskell</span>
+              </div>
+            </div>
+            <div className="skills-category">
+              <div className="skills-category-label">Frameworks + Libraries</div>
+              <div className="skills-tags">
+                <span className="skill-tag">ROS/ROS2</span>
+                <span className="skill-tag">.NET Core</span>
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">NodeJS</span>
-                <span className="skill-tag">Haskell</span>
-                <span className="skill-tag">Bash</span>
-                <span className="skill-tag">MacOS</span>
-                <span className="skill-tag">Linux</span>
-                <span className="skill-tag">Windows</span>
+                <span className="skill-tag">Flutter</span>
+                <span className="skill-tag">Flask</span>
+                <span className="skill-tag">TensorFlow</span>
               </div>
             </div>
 
+
             <div className="skills-category">
-              <div className="skills-category-label">Tools & Technologies</div>
+              <div className="skills-category-label">Tools + Technologies</div>
               <div className="skills-tags">
-                <span className="skill-tag">Research</span>
-                <span className="skill-tag">SysAdmin</span>
+                <span className="skill-tag">MacOS</span>
+                <span className="skill-tag">Linux</span>
+                <span className="skill-tag">Windows</span>
                 <span className="skill-tag">Docker</span>
-                <span className="skill-tag">Web Dev</span>
-                <span className="skill-tag">Kubernetes</span>
-                <span className="skill-tag">Azure Deployments</span>
+                <span className="skill-tag">Azure</span>
                 <span className="skill-tag">Git</span>
                 <span className="skill-tag">Blender</span>
                 <span className="skill-tag">AutoCAD</span>
@@ -89,10 +94,13 @@ function Work() {
             <div className="skills-category">
               <div className="skills-category-label">Other Competencies</div>
               <div className="skills-tags">
-                <span className="skill-tag">Embedded Systems Design</span>
+                <span className="skill-tag">Research</span>
+                <span className="skill-tag">Web Dev</span>
                 <span className="skill-tag">Project Management</span>
                 <span className="skill-tag">Technical Writing</span>
                 <span className="skill-tag">Presentation</span>
+                <span className="skill-tag">Embedded Systems Design</span>
+                <span className="skill-tag">SysAdmin</span>
               </div>
             </div>
           </div>

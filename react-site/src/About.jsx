@@ -16,7 +16,7 @@ function About() {
 				<div className="about-header-content">
 					<div className="about-header-grid">
 						<div className="about-headshot-container">
-							<img src={require('./img/dither_it_IMG_0917.png')} alt="Self portrait" className="about-headshot-large" />
+							<img src={require('./img/yellow_dither_selfie.png')} alt="Self portrait" className="about-headshot-large" />
 						</div>
 						<div className="about-header-info">
 							<div className="about-system-info">

@@ -1,5 +1,12 @@
 /* Work/Resume Page Specific Styles */
 
+body {
+  background-color: #051014;
+  color: #F4B43E;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
 .resume {
   max-width: 800px;
   margin: 0 auto;
@@ -163,7 +170,7 @@
   border-radius: 0.25rem;
   color: #F4B43E;
   font-size: 0.85rem;
-  font-family: 'Consolas', monospace;
+  font-family: system-ui, sans-serif;
   transition: all 0.2s ease;
   box-shadow: 0 0 5px rgba(244, 180, 62, 0.08);
   white-space: nowrap;
@@ -244,7 +251,6 @@
   border: none;
   padding: 0;
   margin-top: 0.5rem;
-  font-family: 'Consolas', monospace;
   transition: opacity 0.2s;
   display: inline-block;
 }
@@ -263,7 +269,6 @@
   margin-left: 1rem;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
-  font-family: 'Consolas', monospace;
 }
 
 .publication-link:hover {

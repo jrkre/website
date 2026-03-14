@@ -460,7 +460,7 @@ body::after {
 body {
   background-color: #000;
   color: #f0b64c;
-  font-family: 'Consolas', monospace;
+  font-family: 'JetbrainsMono', monospace;
   overflow: hidden;
   text-shadow: 0 0 4px #f0b64c88, 0 0 12px #f0b64c55;
 }

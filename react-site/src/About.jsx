@@ -100,6 +100,10 @@ function About() {
 							<span className="attribute-label">[SYSADMIN]</span>
 							<p>I enjoy experimenting with something new on my home server. This site actually runs on that server.</p>
 						</div>
+						<div className="about-attribute-item">
+							<span className="attribute-label">[WABI-SABI]</span>
+							<p>I'm drawn to the beauty of imperfection and the transient nature of existence. This aesthetic philosophy directly influences my approach to both technology and life.</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -112,7 +116,7 @@ function About() {
 					</div>
 				</div>
 				<div className="module-content">
-					<p className="module-description">Tana is my adventure buddy and all-around good dog. Whether we’re hiking, playing fetch, or just hanging out, she makes life better.</p>
+					<p className="module-description">Tana is my adventure buddy and all-around good dog. Whether we’re hiking, playing catch, or just hanging out, she makes life better.</p>
 					<div className="about-companion-gallery">
 						<div className="about-companion-card">
 							<img src={require('./img/yellow_dither_tana.png')} alt="Tana" className="about-companion-photo" />

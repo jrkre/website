@@ -175,7 +175,7 @@ function Work() {
                   <li>Technologies: React, .NET Core, ROS2, Azure.</li>
                 </ul>
                 <a
-                href="https://bloom.nevada.dev/about"
+                href="https://bloom.unr.dev/about"
                 className="publication-link"
                 target="_blank"
                 rel="noopener noreferrer"

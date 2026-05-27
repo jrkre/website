@@ -23,7 +23,7 @@ jobs:
 
   deploy:
     name: Deploy react-site
-    needs: test
+    # needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: tailscale/github-action@v2

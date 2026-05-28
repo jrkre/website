@@ -184,7 +184,9 @@ function Work() {
               </a>
                 <h3 className="font-semibold">Database Management Systems Project</h3>
                 <ul>
-                  <li>Personal database management system and web interface.</li>
+                  <li>Personal database system and web interface.</li>
+                  <li>Developed for CS457 - Database Management Systems</li>
+                  <li>Technologies: postgres, python, flask, jinja</li>
                 </ul>
                 <a
                   href="https://dbms.jayknight.dev"

@@ -37,4 +37,4 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
 
       - name: Deploy
-        run: ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no jrkre@${{ secrets.DEPLOY_HOST }} "cd /home/jrkre/web/website && git pull && cd /home/jrkre/web && podman compose rm -sf react-site; podman compose up --build -d react-site"
+        run: ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no jrkre@${{ secrets.DEPLOY_HOST }} "cd /home/jrkre/web/website && git pull && cd /home/jrkre/web && podman stop react-site; podman rm react-site; podman compose up --build -d react-site"

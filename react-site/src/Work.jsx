@@ -182,6 +182,18 @@ function Work() {
                 >
                 → View site
               </a>
+                <h3 className="font-semibold">Database Management Systems Project</h3>
+                <ul>
+                  <li>Personal database management system and web interface.</li>
+                </ul>
+                <a
+                  href="https://dbms.jayknight.dev"
+                  className="publication-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  → View site
+                </a>
                 <h3 className="font-semibold">'HomeLab'</h3>
                 <div style={{marginTop: '0.25rem', marginLeft: '0'}}>
                   <ul>

@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Personal Website
+
+[![Test and Deploy](https://github.com/jrkre/website/actions/workflows/deploy.yml/badge.svg)](https://github.com/jrkre/website/actions/workflows/deploy.yml)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

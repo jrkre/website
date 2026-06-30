@@ -30,6 +30,9 @@ function Work() {
                 <a href="https://github.com/jrkre" target="_blank" rel="noopener noreferrer">
                   → github.com/jrkre
                 </a>
+                <a href="https://www.linkedin.com/in/jrknight/" target="_blank" rel="noopener noreferrer">
+                  → linkedin.com/in/jrknight/
+                </a>
                 <br />
                 <a href={require("./static/Knight, Jay - resume web.pdf")} download>
                   → Download Resume

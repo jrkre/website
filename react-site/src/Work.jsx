@@ -174,7 +174,7 @@ function Work() {
                   <li>Developed for UNR Robotics senior capstone project (2025-2026).</li>
                   <li>Team of 3 engineers collaborating in an agile environment.</li>
                   <li>Technologies: React, .NET Core, ROS2, Azure.</li>
-                  <li>Individual focus: systems engineering, user-centered design, multi-modal robotics, ai-assisted workflows</li>
+                  <li>Individual focus: software/systems engineering, user-centered design, multi-modal robotics, ai-assisted workflows</li>
                 </ul>
                 <a
                 href="https://bloom.unr.dev/"

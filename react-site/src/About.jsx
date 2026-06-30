@@ -23,8 +23,8 @@ function About() {
 								<div className="system-line"><span className="system-prompt">$</span> whoami</div>
 								<div className="system-output">jay knight</div>
 								<div className="system-line"><span className="system-prompt">$</span> system --info</div>
-								<div className="system-output">developer | creator | explorer</div>
-								<div className="system-output">{`interests[] = { retro_tech, photography, adventure }`}</div>
+								<div className="system-output">roboticist | developer | creator | explorer</div>
+								<div className="system-output">{`interests[] = { robots, retro_tech, photography, adventure }`}</div>
 								{/* <div className="system-output"></div> */}
 								{/* <div className='system-output'></div> */}
 							</div>
@@ -101,8 +101,12 @@ function About() {
 							<p>I enjoy experimenting with something new on my home server. This site actually runs on that server.</p>
 						</div>
 						<div className="about-attribute-item">
-							<span className="attribute-label">[WABI-SABI]</span>
+							<span className="attribute-label">[WABI_SABI]</span>
 							<p>I'm drawn to the beauty of imperfection and the transient nature of existence. This aesthetic philosophy directly influences my approach to both technology and life.</p>
+						</div>
+						<div className="about-attribute-item">
+							<span className="attribute-label">[OLD_SOUL]</span>
+							<p>I feel like an analog mind living through an AI-driven moment - more drawn to handwritten notes, film, and slow craft than to whatever's automating itself this week. I don't see that as a contradiction, though: I build with these new tools every day, I just try to stay a little old-fashioned about what's worth taking my time on.</p>
 						</div>
 					</div>
 				</div>

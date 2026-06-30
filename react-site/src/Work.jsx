@@ -170,12 +170,14 @@ function Work() {
           <div className="experience-details">
                 <h3 className="font-semibold">Bloom</h3>
                 <ul>
-                  <li>Developed for UNR Robotics senior capstone project (2023-2024).</li>
+                  <li>Bloom helps Speech Language Pathologists guide students who struggle with specific speech and language competencies through targeted therapy interventions, with a focus on engaging, repeatable exercises. The system is designed to be easy to set up, easy to use, and reliable in real-world settings.</li>
+                  <li>Developed for UNR Robotics senior capstone project (2025-2026).</li>
                   <li>Team of 3 engineers collaborating in an agile environment.</li>
                   <li>Technologies: React, .NET Core, ROS2, Azure.</li>
+                  <li>Individual focus: systems engineering, user-centered design, multi-modal robotics, ai-assisted workflows</li>
                 </ul>
                 <a
-                href="https://bloom.unr.dev/about"
+                href="https://bloom.unr.dev/"
                 className="publication-link"
                 target="_blank"
                 rel="noopener noreferrer"

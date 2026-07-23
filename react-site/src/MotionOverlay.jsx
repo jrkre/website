@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import logo from './static/jk_logo_mask.svg';
+import logo from './img/Lambda-no-background.png';
 
-const LOGO_WIDTH = 450; // adjust to your overlay logo's width
-const LOGO_HEIGHT = 100; // adjust to your overlay logo's height
+const LOGO_WIDTH = 300; // adjust to your overlay logo's width
+const LOGO_HEIGHT = 300; // adjust to your overlay logo's height
 
 const MotionOverlay = ({ targetPos, motion_delay }) => {
   // Center of viewport minus half logo size
@@ -23,7 +23,7 @@ const MotionOverlay = ({ targetPos, motion_delay }) => {
         animate={{
           x: targetPos?.x ?? centerX,
           y: targetPos?.y ?? centerY,
-          scale: 0.5,
+          scale: 0.26,
           opacity: 0,
         }}
         transition={{ delay: motion_delay, duration: 0.7, ease: "easeInOut" }}
@@ -33,10 +33,10 @@ const MotionOverlay = ({ targetPos, motion_delay }) => {
             src={logo}
             className="logo"
             alt="logo"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
           />
-          <div className="logo-text">jay knight</div>
         </div>
       </motion.div>
     </div>

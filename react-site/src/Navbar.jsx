@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from './static/jk_logo.svg';
+import logo from './img/Lambda-no-background.png';
 import { Link } from 'react-router-dom';
 
 function Navbar({ fade_in_time, logoRef }) {

@@ -34,8 +34,8 @@ code {
 }
 
 /* CRT text with chromatic aberration */
-.crt-text {
+/* .crt-text {
   text-shadow:
     0.03em 0 red,
     -0.03em 0 cyan;
-}
+} */

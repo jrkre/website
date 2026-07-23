@@ -63,17 +63,22 @@ html, body {
 }
 
 .logo-anim {
-  display: flex;
-  align-items: center;
   padding: 1rem;
   position: absolute;
   z-index: 50;
 }
 
 .logo-anim img {
-  height: 120px;
-  margin-right: .5rem;
-  padding: 0.5rem;
+  display: block;
+  width: 250px;
+  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: none;
+  object-fit: contain;
+  padding: 0.25rem;
+  background: linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  border-radius: 1.5rem;
 }
 
 /* CSS Variables */

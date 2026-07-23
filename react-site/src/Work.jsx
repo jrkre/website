@@ -1,5 +1,4 @@
 import './output.css';
-import './static/App.css';
 import React, { useState } from 'react';
 
 

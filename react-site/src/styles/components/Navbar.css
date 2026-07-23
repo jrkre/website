@@ -40,7 +40,9 @@
 .topbar-logo img {
   height: 65px;
   margin-right: 0.5rem;
-  padding: .5rem;
+  padding: .3rem;
+  background: linear-gradient(135deg, #ef767a 0%, #7d7abc 52%, #a8e6cf 100%);
+  border-radius: 0.5rem;
 }
 
 .topbar-logo .crt-logo {

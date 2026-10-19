@@ -141,6 +141,24 @@ function Work() {
           <h2>Publications</h2>
           <div className="publication-item">
             <span className="publication-title">
+              From Co-Design to Clinical Workflow: Shaping Clinician-Supervised Social Robots for Speech Therapy
+            </span>
+            <span className="publication-venue">— ACM/IEEE HRI 2027 (In Review)</span>
+            <p className="publication-authors">
+              Jay Knight, Denielle Oliva, Heather Amistani, Maxwell Knaefler, Illya Gavlovskyi, David Feil-Seifer
+            </p>
+            <a
+              href="https://bloom.unr.dev/"
+              className="publication-link"
+              style={{marginLeft: 0}}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              → Related project: Bloom
+            </a>
+          </div>
+          <div className="publication-item">
+            <span className="publication-title">
               Design Activity for Child-Drawn Robot Faces: Evaluating Responses to Child-Drawn Expressive Faces
             </span>
             <span className="publication-venue">— IEEE RO-MAN 2025</span>
@@ -179,6 +197,16 @@ function Work() {
                   <li>Technologies: React, .NET Core, ROS2, Azure.</li>
                   <li>Individual focus: software/systems engineering, user-centered design, multi-modal robotics, ai-assisted workflows</li>
                 </ul>
+                <div className="project-video">
+                  <iframe
+                    title="Bloom project video"
+                    src="https://www.youtube.com/embed/TyIQ7iCdlII?rel=0"
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
                 <a
                 href="https://bloom.unr.dev/"
                 className="publication-link"

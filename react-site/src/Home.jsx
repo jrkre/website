@@ -25,7 +25,7 @@ function Home() {
             return newLines;
           });
           setCharIdx(charIdx + 1);
-        }, 30);
+        }, 20);
         return () => clearTimeout(timeout);
       } else {
         const timeout = setTimeout(() => {

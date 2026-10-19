@@ -116,10 +116,10 @@ function Work() {
           <h2>Experience</h2>
           <h3>Undergraduate Researcher - UNR SARG <span className="text-gray-400 text-sm">(Aug 2023 - Present)</span></h3>
           <ul>
-            <li><p>Made significant contributions to the AI Institute for Exceptional Education and personalized learning.</p></li>
-            <li><p>Designed study and software solution for customizable robot faces for children.</p></li>
-            <li><p>Implemented a student-learning platform for educational robotics simulations. The platform integrates AI tools to study adaptive learning.</p></li>
-            <li><p>Implemented low-level drivers for low-cost educational robotics platforms.</p></li>
+            <li><p>Led systems engineering on Bloom, a clinician-supervised social robot platform for speech therapy. Built it on a team of 3 with React, .NET Core, ROS2, and Azure, turning co-design input from speech-language pathologists into a working clinical workflow. First-authored the resulting paper (in review, ACM/IEEE HRI 2027).</p></li>
+            <li><p>Co-designed a child-centered robot face study and built the software to render personalized, child-drawn expressive faces. Co-authored the resulting paper, published at IEEE RO-MAN 2025.</p></li>
+            <li><p>Built a student-learning platform for educational robotics simulations with integrated AI tools, used to study adaptive learning for the AI Institute for Exceptional Education.</p></li>
+            <li><p>Wrote low-level hardware drivers for low-cost educational robotics platforms, making them usable in research and classroom deployments.</p></li>
           </ul>
           <h3>REU Researcher - UNR SARG <span className="text-gray-400 text-sm">(Jun 2023 - Aug 2023)</span></h3>
           <ul>

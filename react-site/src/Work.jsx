@@ -229,6 +229,19 @@ function Work() {
                 >
                   → View site
                 </a>
+                <h3 className="font-semibold">URL Shortener</h3>
+                <ul>
+                  <li>Full-stack link shortening service with QR code generation for shortened links.</li>
+                  <li>Technologies: .NET Core, React, MariaDB.</li>
+                </ul>
+                <a
+                  href="https://github.com/jrkre/url_shortener"
+                  className="publication-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  → View on GitHub
+                </a>
                 <h3 className="font-semibold">'HomeLab'</h3>
                 <div style={{marginTop: '0.25rem', marginLeft: '0'}}>
                   <ul>

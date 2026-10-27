@@ -139,7 +139,7 @@ function Work() {
         {/* Publications */}
         <section className="resume-section">
           <h2>Publications</h2>
-          <div className="publication-item">
+          {/* <div className="publication-item">
             <span className="publication-title">
               From Co-Design to Clinical Workflow: Shaping Clinician-Supervised Social Robots for Speech Therapy
             </span>
@@ -156,7 +156,7 @@ function Work() {
             >
               → Related project: Bloom
             </a>
-          </div>
+          </div> */}
           <div className="publication-item">
             <span className="publication-title">
               Design Activity for Child-Drawn Robot Faces: Evaluating Responses to Child-Drawn Expressive Faces
